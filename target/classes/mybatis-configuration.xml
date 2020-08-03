@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <settings>
+        <!-- 显示sql语句 -->
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+        <!-- 全局性设置懒加载。总开关。 -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!-- true为一般懒（侵入式）  false非常懒（深度） -->
+        <setting name="aggressiveLazyLoading" value="false"/>
+        <!-- 开启二级缓存 -->
+        <!-- <setting name="cacheEnabled" value="true"/>  -->
+    </settings>
+
+    <!-- 定义别名 -->
+    <typeAliases>
+        <typeAlias type="com.javen.pojo.User" alias="user"/>
+    </typeAliases>
+
+</configuration>
